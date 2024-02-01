@@ -1,0 +1,23 @@
+﻿<Window x:Class="inf3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:inf3"
+        mc:Ignorable="d"
+        Title="FloatConverter" Height="450" Width="422" ResizeMode="NoResize">
+    <Grid Margin="0,0,0,-6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="55*"/>
+            <ColumnDefinition Width="367*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="___Без_имени_" Content="DEC" HorizontalAlignment="Left" Height="30" Margin="20,18,0,0" VerticalAlignment="Top" Width="48" Grid.ColumnSpan="2"/>
+        <Label Content="BIN" HorizontalAlignment="Left" Height="30" Margin="20,53,0,0" VerticalAlignment="Top" Width="48" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Dec" HorizontalAlignment="Left" Margin="13,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="30" TextChanged="Dec_TextChanged" Grid.Column="1"/>
+        <TextBox x:Name="Bin" HorizontalAlignment="Left" Margin="13,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" Height="30" TextChanged="Bin_TextChanged" Grid.Column="1"/>
+        <Button x:Name="Do" Content="Dec to Bin" HorizontalAlignment="Left" Height="30" Margin="13,88,0,0" VerticalAlignment="Top" Width="76" Click="Do_Click" Grid.Column="1"/>
+        <Button x:Name="Undo" Content="Bin to dec" HorizontalAlignment="Left" Height="30" Margin="94,88,0,0" VerticalAlignment="Top" Width="76" Click="Undo_Click" Grid.Column="1"/>
+        <TextBox x:Name="Plan" HorizontalAlignment="Left" Height="244" Margin="13,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" Grid.Column="1" TextChanged="Plan_TextChanged"/>
+
+    </Grid>
+</Window>
